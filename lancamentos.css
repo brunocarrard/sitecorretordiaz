@@ -1,0 +1,74 @@
+.lancamentos__cartoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 300px;
+
+    margin-bottom: 2rem;
+
+    border-color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 2px #00000010;
+
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.cartao__titulo {
+    font-weight: 900;
+	font-size: 1.6em;
+	color: black;
+	padding: 10px;
+    background: #ED6B30;
+    border-radius: 5px;
+}
+
+.cartao__conteudo {
+    background: rgb(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.cartao__imagem {
+    width:100%;
+}
+
+.cartao__descricao {
+    background: rgb(237, 107, 68);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .lancamentos__cartoes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 10%;
+        padding-top: 3rem;
+    }
+
+    .cartao {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        flex-wrap: wrap;
+        margin-right: 1rem;
+        margin-bottom: 4rem;
+    }
+
+}
